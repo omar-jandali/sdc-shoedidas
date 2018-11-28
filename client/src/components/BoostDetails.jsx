@@ -29,7 +29,7 @@ export default class ProductDetails extends Component {
   render() {
     //for Specs;
     const specifications = this.props.products.specification;
-    const specArr = JSON.parse(specifications);
+    const specArr = specifications;
 
     return (
       <div className={style.boostParent}>

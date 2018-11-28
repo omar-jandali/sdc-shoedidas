@@ -16,10 +16,10 @@ export default class App extends Component {
       toRender: '',
     };
     this.fetchData = this.fetchData.bind(this);
-    axios.defaults.baseURL = 'http://' + process.env.HOSTNAME + ':' + process.env.PORT;
+    // axios.defaults.baseURL = 'http://' + process.env.HOSTNAME + ':' + process.env.PORT;
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.fetchData();
   }
 
@@ -28,8 +28,8 @@ export default class App extends Component {
       .get('shoedidas/product/details')
       .then(data => {
         let product = data.data;
-        let randomized = product.sort(() => 0.5 - Math.random());
-        let selected = randomized.slice(0, 50);
+        console.log(product)
+        let selected = product.slice(0, 50);
         this.setState({
           products: selected,
         });

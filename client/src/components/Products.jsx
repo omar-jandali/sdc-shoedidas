@@ -8,7 +8,7 @@ import { ratingToStarTranslation } from '../../../helpers/helperFuncs.js';
 
 const Products = function(props) {
   const images = props.products.image;
-  const imagesArr = JSON.parse(images);
+  const imagesArr = images;
 
   const price = props.products.price.toString();
 

@@ -3,7 +3,7 @@ import style from '../css/Description.css';
 
 const Description = function(props) {
   const product = props.products;
-  const imagesArr = JSON.parse(product.image);
+  const imagesArr = product.image;
 
   return (
     <div className={style.display}>

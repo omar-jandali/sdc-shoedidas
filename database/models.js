@@ -19,18 +19,18 @@ const dbConnection = require('./index.js');
 // product details
 
 const Products = dbConnection.define(
-  'productDetails',
+  'details',
   {
     id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
     item_name: { type: Sequelize.STRING },
     category_name: { type: Sequelize.STRING },
     product_type: { type: Sequelize.STRING },
-    description: { type: Sequelize.STRING(1000) },
-    specification: { type: Sequelize.STRING(1000) },
+    description: { type: Sequelize.TEXT },
+    specification: { type: Sequelize.TEXT},
     catchphrase: { type: Sequelize.STRING },
     product_details: { type: Sequelize.STRING },
     price: { type: Sequelize.INTEGER },
-    image: { type: Sequelize.STRING(1000) },
+    image: { type: Sequelize.TEXT },
   },
 
   {

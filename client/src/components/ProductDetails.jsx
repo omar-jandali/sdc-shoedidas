@@ -29,11 +29,11 @@ export default class ProductDetails extends Component {
   render() {
     //for Specs;
     const specifications = this.props.products.specification;
-    const specArr = JSON.parse(specifications);
+    const specArr = specifications;
 
     //for image
     const images = this.props.products.image;
-    const imagesArr = JSON.parse(images);
+    const imagesArr = images;
 
     return (
       <div className={style.productParent}>
