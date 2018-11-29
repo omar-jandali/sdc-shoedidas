@@ -27,9 +27,7 @@ const Products = function(props) {
           <div className={style.productInfo}>
             <img
               className={style.img}
-              src={`http://demandware.edgesuite.net/sits_pod20-adidas/dw/image/v2/aaqx_prd/on/demandware.static/-/Sites-adidas-products/en_US/${
-                imagesArr[0].id
-              }/zoom/${imagesArr[0].fileName}?sh=1024`}
+              src={`https://s3.amazonaws.com/adidas-fake-api/images/dw106f49c3/BQ8484_31_detail_1024.jpg`}
             />
             <div className={style.favorite}>
               <div className={style.toggleWishList}>

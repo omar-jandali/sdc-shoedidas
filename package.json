@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "nodemon server/server.js",
-    "build": "webpack -w",
+    "build": "webpack",
     "test": "jest",
     "seed": "node database/seed/seed.js"
   },
